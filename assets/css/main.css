@@ -11,3 +11,35 @@
   font-weight: bold;
   font-style: normal;
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*  16px * 62.5% = 10px, so 1rem = 10px */
+:root {
+  font-size: 62.5%;
+  --primary-color: rgb(45, 47, 49);
+  --image-size-large: 4.8rem;
+  --image-size-medium: 4rem;
+  --icon-size-medium: 2.4rem;
+}
+
+.ud-btn-large {
+  height: var(--image-size-large);
+}
+
+.ud-btn-medium {
+  height: var(--image-size-medium);
+}
+
+.ud-icon-large {
+  height: var(--image-size-large);
+  width: var(--image-size-large);
+}
+
+.ud-icon-medium {
+  height: var(--icon-size-medium);
+  width: var(--icon-size-medium);
+}

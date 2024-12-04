@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     config: {
       theme: {
         extend: {
-          colors: { primary: "rgb(45, 47, 49)" },
+          colors: { primary: "var(--primary-color)" },
           fontFamily: {
             sans: ["Clone Udemy Text", ...defaultTheme.fontFamily.sans],
           },
