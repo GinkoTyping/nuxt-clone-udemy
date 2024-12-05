@@ -41,7 +41,7 @@
     </button>
     <button class="ud-icon-large flex items-center justify-center"></button>
     <div class="flex justify-center items-center flex-1">
-      <img class="logo" src="~/assets/images/logo-udemy.svg" alt="" srcset="" />
+      <img class="logo !w-[12rem]" src="~/assets/images/logo-udemy-benesse.svg" alt="" srcset="" />
     </div>
     <button class="ud-icon-large flex items-center justify-center">
       <img :src="SearchDarkerIcon" class="ud-icon-medium" />
@@ -65,6 +65,7 @@ header {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #fff;
   .logo {
     width: 190px;

@@ -18,6 +18,12 @@
   margin: 0;
 }
 
+@media (max-width: 500px) {
+  #__nuxt {
+    margin: 0 2.4rem;
+  }
+}
+
 /*  16px * 62.5% = 10px, so 1rem = 10px */
 :root {
   font-size: 62.5%;
@@ -50,6 +56,7 @@
   height: var(--icon-size-medium);
   width: var(--icon-size-medium);
 }
+
 .ud-icon-xsmall {
   height: var(--icon-size-xsmall);
   width: var(--icon-size-xsmall);
@@ -75,4 +82,3 @@
   color: var(--banner-light-inverse-color);
   text-decoration: underline;
 }
-

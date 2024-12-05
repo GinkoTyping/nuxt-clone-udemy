@@ -1,17 +1,27 @@
 <template>
-  <div class="banner mt-[7.2rem] py-[3.2rem]">
-    <!-- <div class="container max-[1080px]:w-[60rem] min-[1080px]:w-[118rem]"> -->
+  <div
+    class="banner min-[500px]:mt-[7.2rem],py-[3.2rem]"
+  >
     <div class="banner-container">
       <div class="breads flex items-center mb-[1.6rem]">
-        <a href="">Development</a>
+        <a class="max-[500px]:hidden" href="">Development</a>
         <img class="right-dark" :src="BreadIcon" alt="" srcset="" />
-        <img class="right-light" :src="RighLightIcon" alt="" srcset="" />
+        <img
+          class="right-light max-[500px]:!hidden"
+          :src="RighLightIcon"
+          alt=""
+          srcset=""
+        />
         <a href="">Programming Languages</a>
         <img class="right-dark" :src="BreadIcon" alt="" srcset="" />
         <img class="right-light" :src="RighLightIcon" alt="" srcset="" />
         <a href="">Python</a>
       </div>
-      <div class="course-header w-[70rem]">
+      <img
+        class="min-[1080px]:hidden max-[500px]:w-[100vw] border border-black mb-[3.2rem]"
+        src="~/assets/images/course-image.png"
+      />
+      <div class="course-header">
         <h1 class="ud-heading-xxl mb-[1.6rem]">
           The Complete Python Bootcamp From Zero to Hero in Python
         </h1>
@@ -111,7 +121,7 @@ import RighLightIcon from "~/assets/icons/right.svg";
 .banner {
   .breads {
     font-size: var(--font-sm);
-    padding: .4rem;
+    padding: 0.4rem;
     img {
       width: 1.6rem;
       height: 1.6rem;
@@ -148,16 +158,16 @@ import RighLightIcon from "~/assets/icons/right.svg";
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .banner-container {
     width: 118rem;
-    padding: 0 4.8rem;
   }
 }
 
-@media (max-width: 1280px) {
+@media (min-width: 1080px) and (max-width: 1200px) {
   .banner-container {
-    margin: 0 4.8rem !important;
+    padding: 0 4.8rem;
+    width: 100%;
   }
 }
 
@@ -165,8 +175,14 @@ import RighLightIcon from "~/assets/icons/right.svg";
   .banner {
     background-color: rgb(28, 29, 31);
     color: #fff;
+    .banner-container {
+      width: 118rem;
+    }
     .breads {
       color: var(--banner-dark-inverse-color);
+    }
+    .course-header {
+      width: 70rem;
     }
     .right-dark,
     .icon-dark {
@@ -196,7 +212,7 @@ import RighLightIcon from "~/assets/icons/right.svg";
         flex-direction: column;
         align-items: flex-start;
         .course-header_tags-item {
-          margin-bottom: .8rem;
+          margin-bottom: 0.8rem;
         }
       }
       .right-dark,
@@ -210,4 +226,20 @@ import RighLightIcon from "~/assets/icons/right.svg";
     }
   }
 }
+
+@media (min-width: 800px) {
+  .banner {
+    margin-top: 7.2rem;
+    padding: 3.2rem 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .banner {
+    margin-top: 5.6rem;
+    padding: 3.2rem 0;
+  }
+}
+
+
 </style>
