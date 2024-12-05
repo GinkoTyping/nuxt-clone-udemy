@@ -60,10 +60,11 @@ import EarthIcon from "~/assets/icons/earth.svg";
 import Menu from "~/assets/icons/menu.svg";
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
   position: fixed;
+  top: 0;
   background-color: #fff;
   .logo {
     width: 90px;

@@ -20,10 +20,14 @@
 /*  16px * 62.5% = 10px, so 1rem = 10px */
 :root {
   font-size: 62.5%;
-  --primary-color: rgb(45, 47, 49);
   --image-size-large: 4.8rem;
   --image-size-medium: 4rem;
   --icon-size-medium: 2.4rem;
+  
+  --primary-color: rgb(45, 47, 49);
+  --banner-dark-inverse-color: #c0c4fc;
+
+  --font-sm: 1.4rem;
 }
 
 .ud-btn-large {
