@@ -1,8 +1,13 @@
 <template>
   <header
-    class="w-full items-center h-[7.2rem] px-[2.4rem] max-[800px]:hidden min-[800px]:flex"
+    class="w-full items-center h-[7.2rem] px-[2.4rem] max-[800px]:hidden min-[800px]:flex relative z-50"
   >
-    <img class="logo" src="~/public/images/logo-udemy-benesse.svg" alt="" srcset="" />
+    <img
+      class="logo"
+      src="~/public/images/logo-udemy-benesse.svg"
+      alt=""
+      srcset=""
+    />
     <button class="nav-button ud-btn-large text-primary">
       <span>Categories</span>
     </button>
@@ -34,6 +39,30 @@
     </button>
   </header>
   <header
+    class="w-full h-[6.2rem] px-[1.6rem] py-[0.8rem] max-[1080px]:hidden !bg-black fixed left-0 top-0 z-10"
+  >
+    <p class="text-white text-[1.6rem] font-bold mb-[.4rem]">
+      The Complete Python Bootcamp From Zero to Hero in Python
+    </p>
+    <div class="course-header_rating flex ud-text-sm mb-[1.6rem]">
+      <a href="" class="flex items-center mr-[.4rem]">
+        <span class="pr-[.4rem]">4.6</span>
+        <img :src="SartIcon" alt="" srcset="" />
+        <img :src="SartIcon" alt="" srcset="" />
+        <img :src="SartIcon" alt="" srcset="" />
+        <img :src="SartIcon" alt="" srcset="" />
+        <img :src="SartHalfIcon" alt="" srcset="" />
+      </a>
+      <span
+        class="mr-[.8rem] ud-link-label !text-[var(--banner-dark-inverse-color)]"
+        >(523,484 ratings)</span
+      >
+      <span class="text-[#fff]">1,989,567 students</span>
+    </div>
+  </header>
+
+  <!-- smaller than 1080px -->
+  <header
     class="w-full items-center h-[5.6rem] px-[0.4rem] min-[800px]:hidden max-[800px]:flex"
   >
     <button class="ud-icon-large flex items-center justify-center">
@@ -41,7 +70,12 @@
     </button>
     <button class="ud-icon-large flex items-center justify-center"></button>
     <div class="flex justify-center items-center flex-1">
-      <img class="logo !w-[12rem]" src="~/public/images/logo-udemy-benesse.svg" alt="" srcset="" />
+      <img
+        class="logo !w-[12rem]"
+        src="~/public/images/logo-udemy-benesse.svg"
+        alt=""
+        srcset=""
+      />
     </div>
     <button class="ud-icon-large flex items-center justify-center">
       <img :src="SearchDarkerIcon" class="ud-icon-medium" />
@@ -58,9 +92,18 @@ import SearchDarkerIcon from "~/assets/icons/search_darker.svg";
 import CartIcon from "~/assets/icons/cart.svg";
 import EarthIcon from "~/assets/icons/earth.svg";
 import Menu from "~/assets/icons/menu.svg";
+import SartIcon from "~/assets/icons/star.svg";
+import SartHalfIcon from "~/assets/icons/star_half.svg";
 </script>
 
 <style lang="scss" scoped>
+.course-header_rating {
+  color: rgb(246, 156, 8);
+  img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
 header {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #fff;

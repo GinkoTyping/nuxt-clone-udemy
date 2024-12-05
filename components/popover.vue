@@ -1,5 +1,5 @@
 <template>
-  <div class="course-popover absolute w-[34rem] animate__animated">
+  <div class="course-popover absolute w-[34rem] animate__animated z-50">
     <div
       class="course-popover-container min-[1200px]:transform-from-left bg-white min-[1080px]:shadow-lg"
     >
