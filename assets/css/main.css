@@ -63,6 +63,12 @@
   font-size: clamp(2rem, calc(2rem + (3.2 - 2) * calc((100vw - 36rem) / (144 - 36))), 3.2rem);
 }
 
+.ud-heading-xl {
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: clamp(1.8rem, calc(1.8rem + (2.4 - 1.8) * calc((100vw - 36rem) / (144 - 36))), 2.4rem);
+}
+
 .ud-heading-lg {
   line-height: 1.4;
   font-size: clamp(1.65rem, calc(1.65rem + (1.8 - 1.65) * calc((100vw - 36rem) / (144 - 36))), 1.8rem);
