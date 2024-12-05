@@ -159,6 +159,10 @@ import RighLightIcon from "~/assets/icons/right.svg";
 @media (min-width: 1200px) {
   .banner-container {
     width: 118rem;
+    padding: 0 4.8rem;
+    .course-header {
+      width: 70rem;
+    }
   }
 }
 
@@ -166,6 +170,9 @@ import RighLightIcon from "~/assets/icons/right.svg";
   .banner-container {
     padding: 0 4.8rem;
     width: 100%;
+    .course-header {
+      width: 60rem;
+    }
   }
 }
 
@@ -173,14 +180,8 @@ import RighLightIcon from "~/assets/icons/right.svg";
   .banner {
     background-color: rgb(28, 29, 31);
     color: #fff;
-    .banner-container {
-      width: 118rem;
-    }
     .breads {
       color: var(--banner-dark-inverse-color);
-    }
-    .course-header {
-      width: 70rem;
     }
     .right-dark,
     .icon-dark {
