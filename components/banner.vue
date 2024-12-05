@@ -27,7 +27,7 @@
           Learn Python like a Professional Start from the basics and go all the
           way to creating your own applications and games
         </p>
-        <div class="course-header_rating flex ud-heading-sm mb-[1.6rem]">
+        <div class="course-header_rating flex ud-text-sm mb-[1.6rem]">
           <a href="" class="flex items-center mr-[.4rem]">
             <span class="pr-[.4rem]">4.6</span>
             <img :src="SartIcon" alt="" srcset="" />
@@ -39,14 +39,14 @@
           <span class="mr-[.8rem] ud-link-label">(523,484 ratings)</span>
           <span class="text-[#fff]">1,989,567 students</span>
         </div>
-        <div class="course-header_supplier ud-heading-sm mb-[1.6rem]">
+        <div class="course-header_supplier ud-text-sm mb-[1.6rem]">
           <span
             >Created by <a href="" class="ud-link-label">Jose Portilla</a>,
             <a href="" class="ud-link-label">Jose Portilla</a></span
           >
         </div>
         <div
-          class="course-header_tags mb-[1.6rem] ud-heading-sm flex items-center h-[1.8rem]"
+          class="course-header_tags mb-[1.6rem] ud-text-sm flex items-center h-[1.8rem]"
         >
           <div class="course-header_tags-item">
             <img
