@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="banner min-[500px]:mt-[7.2rem],py-[3.2rem]"
-  >
+  <div class="banner">
     <div class="banner-container">
       <div class="breads flex items-center mb-[1.6rem]">
         <a class="max-[500px]:hidden" href="">Development</a>
@@ -241,5 +239,20 @@ import RighLightIcon from "~/assets/icons/right.svg";
   }
 }
 
-
+@media (max-width: 500px) {
+  .banner {
+    margin-top: 5.6rem;
+    .banner-container {
+      width: 100%;
+      padding-top: 2.4rem;
+      & > img {
+        border: none !important;
+      }
+      .breads,
+      .course-header {
+        margin: 0 2.4rem;
+      }
+    }
+  }
+}
 </style>
