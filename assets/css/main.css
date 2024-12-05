@@ -17,15 +17,18 @@
   padding: 0;
   margin: 0;
 }
+
 /*  16px * 62.5% = 10px, so 1rem = 10px */
 :root {
   font-size: 62.5%;
   --image-size-large: 4.8rem;
   --image-size-medium: 4rem;
   --icon-size-medium: 2.4rem;
-  
+  --icon-size-xsmall: 1.6rem;
+
   --primary-color: rgb(45, 47, 49);
   --banner-dark-inverse-color: #c0c4fc;
+  --banner-light-inverse-color: #5022c3;
 
   --font-sm: 1.4rem;
 }
@@ -47,3 +50,29 @@
   height: var(--icon-size-medium);
   width: var(--icon-size-medium);
 }
+.ud-icon-xsmall {
+  height: var(--icon-size-xsmall);
+  width: var(--icon-size-xsmall);
+}
+
+.ud-heading-xxl {
+  font-weight: bold;
+  line-height: 1.2;
+  font-size: clamp(2rem, calc(2rem + (3.2 - 2) * calc((100vw - 36rem) / (144 - 36))), 3.2rem);
+}
+
+.ud-heading-lg {
+  line-height: 1.4;
+  font-size: clamp(1.65rem, calc(1.65rem + (1.8 - 1.65) * calc((100vw - 36rem) / (144 - 36))), 1.8rem);
+}
+
+.ud-heading-sm {
+  line-height: 1.2;
+  font-size: 1.4rem;
+}
+
+.ud-link-label {
+  color: var(--banner-light-inverse-color);
+  text-decoration: underline;
+}
+

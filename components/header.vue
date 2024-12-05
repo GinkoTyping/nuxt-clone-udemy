@@ -2,7 +2,7 @@
   <header
     class="w-full items-center h-[7.2rem] px-[2.4rem] max-[800px]:hidden min-[800px]:flex"
   >
-    <img class="logo" src="~/assets/images/logo-udemy.svg" alt="" srcset="" />
+    <img class="logo" src="~/assets/images/logo-udemy-benesse.svg" alt="" srcset="" />
     <button class="nav-button ud-btn-large text-primary">
       <span>Categories</span>
     </button>
@@ -67,7 +67,7 @@ header {
   top: 0;
   background-color: #fff;
   .logo {
-    width: 90px;
+    width: 190px;
     padding-right: 8px;
   }
   .nav-button {
