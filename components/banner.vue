@@ -180,6 +180,7 @@ import RighLightIcon from "~/assets/icons/right.svg";
   .banner {
     background-color: rgb(28, 29, 31);
     color: #fff;
+    padding: 3.2rem 0;
     .breads {
       color: var(--banner-dark-inverse-color);
     }
@@ -201,6 +202,7 @@ import RighLightIcon from "~/assets/icons/right.svg";
   .banner {
     background-color: rgb(255, 255, 255);
     color: var(--primary-color);
+    margin-top: 3.2rem;
     .banner-container {
       width: 60rem;
       margin: 0 auto !important;
@@ -226,26 +228,11 @@ import RighLightIcon from "~/assets/icons/right.svg";
   }
 }
 
-@media (min-width: 800px) {
-  .banner {
-    margin-top: 7.2rem;
-    padding: 3.2rem 0;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 800px) {
-  .banner {
-    margin-top: 5.6rem;
-    padding: 3.2rem 0;
-  }
-}
-
 @media (max-width: 500px) {
   .banner {
-    margin-top: 5.6rem;
+    margin-top: 2.4rem;
     .banner-container {
       width: 100%;
-      padding-top: 2.4rem;
       & > img {
         border: none !important;
       }

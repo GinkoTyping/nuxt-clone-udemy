@@ -63,9 +63,6 @@ import Menu from "~/assets/icons/menu.svg";
 <style lang="scss" scoped>
 header {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: #fff;
   .logo {
     width: 190px;
