@@ -176,6 +176,13 @@ function onScroll() {
   }
 }
 
+@media (max-width: 600px) {
+  .course-popover {
+    width: auto;
+    margin: 0 2.4rem;
+  }
+}
+
 .desc-item {
   height: 2rem;
   padding: 0.4rem 0;

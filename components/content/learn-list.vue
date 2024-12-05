@@ -58,4 +58,10 @@ const isExpand = ref(false);
 .modal {
   background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0));
 }
+
+@media (max-width: 600px) {
+  li {
+    width: 100% !important;
+  }
+}
 </style>

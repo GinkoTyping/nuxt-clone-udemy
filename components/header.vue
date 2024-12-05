@@ -4,7 +4,7 @@
   >
     <img
       class="logo"
-      src="~/public/images/logo-udemy-benesse.svg"
+      src="~/public/images/logo-udemy.svg"
       alt=""
       srcset=""
     />
@@ -71,8 +71,8 @@
     <button class="ud-icon-large flex items-center justify-center"></button>
     <div class="flex justify-center items-center flex-1">
       <img
-        class="logo !w-[12rem]"
-        src="~/public/images/logo-udemy-benesse.svg"
+        class="logo !w-[7.5rem]"
+        src="~/public/images/logo-udemy.svg"
         alt=""
         srcset=""
       />
@@ -108,7 +108,7 @@ header {
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.5);
   background-color: #fff;
   .logo {
-    width: 190px;
+    width: 91px;
     padding-right: 8px;
   }
   .nav-button {

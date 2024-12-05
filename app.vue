@@ -19,4 +19,11 @@
   }
 }
 
+@media (max-width: 600px) {
+  .content-container {
+    width: auto;
+    margin: 0 2.4rem !important;
+  }
+}
+
 </style>
