@@ -46,7 +46,7 @@
           >
         </div>
         <div
-          class="course-header_tags mb-[1.6rem] ud-text-sm flex items-center h-[1.8rem]"
+          class="course-header_tags mb-[1.6rem] ud-text-sm flex items-center "
         >
           <div class="course-header_tags-item">
             <img
@@ -134,6 +134,7 @@ import RighLightIcon from "~/assets/icons/right.svg";
       font-weight: bold;
     }
     .course-header {
+
       .course-header_rating {
         color: rgb(246, 156, 8);
         img {

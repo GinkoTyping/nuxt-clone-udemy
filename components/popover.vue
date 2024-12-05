@@ -1,15 +1,15 @@
 <template>
   <div class="course-popover absolute w-[34rem] animate__animated">
     <div
-      class="course-popover-container max-[1080px]:hidden min-[1200px]:transform-from-left bg-white shadow-lg"
+      class="course-popover-container min-[1200px]:transform-from-left bg-white min-[1080px]:shadow-lg"
     >
       <img
-        class="left border border-white"
+        class="left border border-white max-[1080px]:hidden"
         src="~/public/images/course-image.png"
         alt=""
         srcset=""
       />
-      <div class="middle p-[2.4rem] border-b">
+      <div class="middle p-[2.4rem] min-[1080px]:border-b">
         <h1 class="mb-[.8rem] ud-heading-xxl">¥27,800</h1>
         <button
           class="w-full bg-[rgb(164,53,240)] text-white ud-heading-md h-[4.8rem] mb-[.8rem]"
@@ -26,7 +26,7 @@
           <a class="ud-link-label">Refund Policy</a> and
           <a class="ud-link-label">Refund Policy</a>
         </p>
-        <div class="desc">
+        <div class="desc max-[1080px]:hidden">
           <p class="ud-heading-md mb-[.8rem]">This course includes:</p>
           <div class="desc-item flex items-center">
             <img :src="CalenderIcon" alt="" srcset="" />
@@ -67,7 +67,7 @@
             <img class="w-[1.2rem] mx-auto" :src="XIcon" />
           </button>
         </button>
-        <div class="w-full border border-black h-[3.7rem] flex">
+        <div class="w-full border border-black h-[3.7rem] flex justify-between">
           <input
             type="text"
             placeholder="Enter Coupon"
@@ -76,7 +76,7 @@
           <button class="bg-black text-white w-[8rem] ud-text-sm">Apply</button>
         </div>
       </div>
-      <div class="botom p-[2.4rem]">
+      <div class="bottom p-[2.4rem]">
         <h2 class="ud-heading-md mb-[.8rem]">Training 5 or more people?</h2>
         <p class="ud-text-sm mb-[.8rem]">
           Get your team access to 27,000+ top Udemy courses anytime, anywhere.
@@ -160,6 +160,18 @@ function onScroll() {
     &.absolute,
     &.fixed {
       right: var(--BANNER-PADDING_RIGHT);
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .course-popover {
+    position: static !important;
+    width: 60rem;
+    margin: 0 auto;
+    .middle,.bottom {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
