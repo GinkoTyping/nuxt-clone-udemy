@@ -17,7 +17,7 @@
       </div>
       <img
         class="min-[1080px]:hidden max-[500px]:w-[100vw] border border-black mb-[3.2rem]"
-        src="~/assets/images/course-image.png"
+        src="~/public/images/course-image.png"
       />
       <div class="course-header">
         <h1 class="ud-heading-xxl mb-[1.6rem]">

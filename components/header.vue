@@ -2,7 +2,7 @@
   <header
     class="w-full items-center h-[7.2rem] px-[2.4rem] max-[800px]:hidden min-[800px]:flex"
   >
-    <img class="logo" src="~/assets/images/logo-udemy-benesse.svg" alt="" srcset="" />
+    <img class="logo" src="~/public/images/logo-udemy-benesse.svg" alt="" srcset="" />
     <button class="nav-button ud-btn-large text-primary">
       <span>Categories</span>
     </button>
@@ -41,7 +41,7 @@
     </button>
     <button class="ud-icon-large flex items-center justify-center"></button>
     <div class="flex justify-center items-center flex-1">
-      <img class="logo !w-[12rem]" src="~/assets/images/logo-udemy-benesse.svg" alt="" srcset="" />
+      <img class="logo !w-[12rem]" src="~/public/images/logo-udemy-benesse.svg" alt="" srcset="" />
     </div>
     <button class="ud-icon-large flex items-center justify-center">
       <img :src="SearchDarkerIcon" class="ud-icon-medium" />
